@@ -10,7 +10,6 @@
     cursor: pointer;
     border-radius: 0.25rem;
     outline: none;
-    /* 0.25rem */
     padding: 0.5rem 0.75rem 0.5rem 0.75rem;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -18,7 +17,6 @@
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     transition: box-shadow .3s;
-    /* .9rem; */
 }
 
 .fs-1 {

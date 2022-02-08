@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="btn.css">
+    <link rel="stylesheet" href="btn-color.css">
+</head>
+
+<body>
+    <svg class="header-svg" width="940" height="528" viewBox="0 0 940 528" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M251.465 164C32.7544 114.4 -6.73514 34 0.858988 0H940V528C802.293 524.8 669.986 412 621.047 356C588.982 312.667 470.176 213.6 251.465 164Z" fill="#341F97" class="svg__grande"></path>
+        <path d="M462.153 116.788C310.684 81.4667 283.336 24.2121 288.595 0H939V376C843.631 373.721 752.001 293.394 718.108 253.515C695.902 222.657 613.622 152.109 462.153 116.788Z" fill="#5F27CD" class="svg__mediano"></path>
+        <path d="M607.452 77.7197C501.82 54.5167 482.747 16.9053 486.415 1H940V248C873.49 246.503 809.589 193.735 785.952 167.538C770.466 147.266 713.085 100.923 607.452 77.7197Z" fill="#7632FD" class="svg__pequeño"></path>
+    </svg>
+    <header>
+        <h1>COLECCION DE BOTONES RESPONSIVE</h1>
+        <h3>Una coleccion de botones adaptables al texto ingresado</h3>
+        <h3>Hechos con HTML5 CSS3 JS</h3>
+        <a id="next" href="#main"></a>
+        <div class="modal">
+            <div id="title-modal">
+                <h1 class="title-modal color-white">Descarga!</h1>
+            </div>
+            <div class="center-x-y flex-column gap-10">
+                <p class="text-center">Encuentra la descarga de todos los botones al final de la pagina.</p>
+                <button id="cerrar-modal" onclick="cerrarModal()" class="btn-purple-3">Cerrar</button>
+            </div>
+        </div>
+    </header>
+    <main id="main" class="pt-1">
+        <div class=" w-100 px-5 mb-2 ">
+            <h1 class="text-center ">Efecto Hover</h1>
+            <hr class="titleHrButtons w-100 mt-1 ">
+        </div>
+        <div class="row gap-1">
+            <div class="col flex-column center-x-y gap-1 ">
+                <button class="btn btn-InLeft btn-purple-3 w-300 ">InLeft</button>
+                <button class="btn btn-InRight btn-purple-3 w-300 ">InRight</button>
+                <button class="btn btn-InCenterX btn-purple-3 w-300 ">InCenterX</button>
+                <button class="btn btn-InTop btn-purple-3 w-300 ">InTop</button>
+            </div>
+            <div class="col flex-column center-x-y gap-1 ">
+                <button class="btn btn-InBottom btn-purple-3 w-300 ">InBottom</button>
+                <button class="btn btn-InCenterY btn-purple-3 w-300 ">InCenterY</button>
+                <button class="btn btn-InCenterCircle btn-purple-3 w-300 ">InCenterCircle</button>
+                <button class="btn btn-InLeftInRight btn-purple-3 w-300 ">Left&Right</button>
+            </div>
+        </div>
+        <div class="w-100 px-5 mb-2 pt-4">
+            <h1 class="text-center mt-1">Adaptables al Texto</h1>
+            <hr class=" titleHrButtons w-100 mt-1 ">
+        </div>
+        <div class="row gap-1 pb-4">
+            <div class=" col flex-column center-x-y gap-1 ">
+                <button class="btn btn-InLeft btn-purple-3 ">Hola</button>
+                <button class="btn btn-InCenterCircle btn-purple-3 ">Mundo</button>
+            </div>
+            <div class="col flex-column center-x-y gap-1 ">
+                <button class="btn btn-InLeft btn-purple-3 ">Say my name</button>
+                <button class="btn btn-InCenterCircle btn-purple-3 ">Say my name</button>
+            </div>
+        </div>
+        <div class="w-100 px-5 mb-2 ">
+            <h1 class="text-center mt-1">Adaptables al Tamaño de Fuente</h1>
+            <hr class=" titleHrButtons w-100 mt-1 ">
+        </div>
+        <div class="row gap-1">
+            <div class=" col flex-column center-x gap-1 ">
+                <h5>Font Size 1rem</h5>
+                <button class="btn btn-InLeft btn-purple-3 fs-1">Hola</button>
+                <button class="btn btn-InCenterCircle btn-purple-3 fs-1">Mundo</button>
+            </div>
+            <div class="col flex-column center-x gap-1 ">
+                <h5>Font Size 2rem</h5>
+                <button class="btn btn-InLeft btn-purple-3 fs-2">Hola</button>
+                <button class="btn btn-InCenterCircle btn-purple-3 fs-2">Mundo</button>
+            </div>
+            <div class="col flex-column center-x gap-1 ">
+                <h5>Font Size 3rem</h5>
+                <button class="btn btn-InLeft btn-purple-3 fs-3">Hola</button>
+                <button class="btn btn-InCenterCircle btn-purple-3 fs-3">Mundo</button>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col center-y">
+                    <button class="btn btn-purple-3" onclick="downloadButtons()">Descargar todos los estilos</button>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row mt-2 w-100 right-y px-1rem">
+                <h2 id="copy">Hechos por Andres715</h2>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js "></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="reveal.js"></script>
+
+</body>
+
+</html>
