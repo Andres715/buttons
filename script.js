@@ -9,5 +9,5 @@ function cerrarModal() {
 }
 
 function downloadButtons() {
-    window.open("https://github.com/Andres715/buttons.git")
+    window.open("https://github.com/Andres715/buttons-public.git")
 }
