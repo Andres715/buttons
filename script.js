@@ -11,3 +11,7 @@ function cerrarModal() {
 function downloadButtons() {
     window.open("https://github.com/Andres715/buttons-public.git")
 }
+
+function scrollMain() {
+    window.scroll(0, document.querySelector("#main").offsetTop);
+}
